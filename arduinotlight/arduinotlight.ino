@@ -18,7 +18,32 @@
 #define TL4_YELLOW_PIN 10
 #define TL4_GREEN_PIN 11
 
-//Setting up each LED as an output for lighting
+//Fourth traffic light (Top side)
+#define TL4_RED_PIN 9
+#define TL4_YELLOW_PIN 10
+#define TL4_GREEN_PIN 11
+
+// //First Crosswalk light (Top side)
+// #define CW1_RED_PIN pass
+// #define CW1_GREEN_PIN pass
+
+// //Second Crosswalk light (Bottom side)
+// #define CW2_RED_PIN pass
+// #define CW2_GREEN_PIN pass
+
+// //Third Crosswalk light (Left side)
+// #define CW3_RED_PIN pass
+// #define CW3_GREEN_PIN pass
+
+// //First Crosswalk light (Right side)
+// #define CW4_RED_PIN pass
+// #define CW4_GREEN_PIN pass
+
+//Cooldowns for each light whether its red,green or yellow
+int Greenlightactivate 6000
+int Redlightactivate 10000
+int Yellowlight activate 3000
+//Setting up each LED as an output for lights
 void setup() {
   pinMode(TL1_RED_PIN, OUTPUT);
   pinMode(TL1_GREEN_PIN, OUTPUT);
@@ -35,6 +60,19 @@ void setup() {
   pinMode(TL4_RED_PIN, OUTPUT);
   pinMode(TL4_GREEN_PIN, OUTPUT);
   pinMode(TL4_YELLOW_PIN, OUTPUT);
+
+  // pinMode(CW1_RED_PIN, OUTPUT);
+  // pinMode(CW1_GREEN_PIN, OUTPUT);
+
+  // pinMode(CW2_RED_PIN, OUTPUT);
+  // pinMode(CW2_GREEN_PIN, OUTPUT);
+
+  // pinMode(CW3_RED_PIN, OUTPUT);
+  // pinMode(CW3_GREEN_PIN, OUTPUT);
+
+  // pinMode(CW4_RED_PIN, OUTPUT);
+  // pinMode(CW4_GREEN_PIN, OUTPUT);
+  
 }
 
 void loop() {
