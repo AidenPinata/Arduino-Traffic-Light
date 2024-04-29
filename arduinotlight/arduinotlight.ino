@@ -8,6 +8,10 @@
 #define VYELLOW_PIN 5
 #define VGREEN_PIN 3
 
+//Cooldowns for each light whether its red,green or yellow
+int Greenlightactivate 6000
+int Redlightactivate 10000
+int Yellowlight activate 3000
 
 void setup() {
   pinMode(HRED_PIN, OUTPUT);
