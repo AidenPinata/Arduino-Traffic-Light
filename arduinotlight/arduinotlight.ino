@@ -8,10 +8,10 @@
 #define VYELLOW_PIN 5
 #define VGREEN_PIN 3
 
-//Cooldowns for each light whether its red,green or yellow
-int Greenlightactivate 6000
-int Redlightactivate 10000
-int Yellowlight activate 3000
+//Delays
+#define GREEN_DELAY 6000
+#define YELLOW_DELAY 3000
+// #define RED_DELAY 10000
 
 void setup() {
   pinMode(HRED_PIN, OUTPUT);
@@ -24,13 +24,18 @@ void setup() {
 }
 
 void loop() {
+  digitalWrite(HYELLOW_PIN, LOW);
   digitalWrite(HRED_PIN, HIGH);
-  digitalWrite(HYELLOW_PIN, HIGH);
-  digitalWrite(HGREEN_PIN, HIGH);
-
   digitalWrite(VRED_PIN, HIGH);
-  digitalWrite(VYELLOW_PIN, HIGH);
-  digitalWrite(VGREEN_PIN, HIGH);
+  digitalWrite(HGREEN_PIN,LOW);
+  delay(2000);
+  digitalWrite(HRED_PIN, LOW);
+  digitalWrite(HGREEN_PIN, HIGH);
+  digitalWrite(VRED_PIN, HIGH);
+  delay(GREEN_DELAY);
+  digitalWrite(HYELLOW_PIN, HIGH);
+  digitalWrite(HGREEN_PIN, LOW);
+  delay(YELLOW_DELAY);
 }
 
 
