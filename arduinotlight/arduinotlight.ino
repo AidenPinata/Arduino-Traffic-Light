@@ -24,7 +24,6 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(HYELLOW_PIN, LOW);
   digitalWrite(HRED_PIN, HIGH);
   digitalWrite(VRED_PIN, HIGH);
   digitalWrite(HGREEN_PIN,LOW);
@@ -36,6 +35,18 @@ void loop() {
   digitalWrite(HYELLOW_PIN, HIGH);
   digitalWrite(HGREEN_PIN, LOW);
   delay(YELLOW_DELAY);
+  digitalWrite(HYELLOW_PIN, LOW);
+  digitalWrite(HRED_PIN, HIGH);
+  digitalWrite(VRED_PIN, HIGH);
+  delay(2000);
+  digitalWrite(VRED_PIN, LOW);
+  digitalWrite(VGREEN_PIN, HIGH);
+  delay(GREEN_DELAY);
+  digitalWrite(VGREEN_PIN, LOW);
+  digitalWrite(VYELLOW_PIN, HIGH);
+  delay(YELLOW_DELAY);
+  digitalWrite(VYELLOW_PIN, LOW);
+  digitalWrite(VRED_PIN, HIGH);
 }
 
 
