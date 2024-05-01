@@ -38,7 +38,7 @@ void loop() {
   digitalWrite(HRED_PIN, LOW);
   digitalWrite(HGREEN_PIN, HIGH);
   digitalWrite(VRED_PIN, HIGH);
-  //Timing for how long green needs to be off for
+  //Timing for how long Green needs to be off for
   delay(GREEN_DELAY);
 
   //When the Horzontal lights are turning yellow and the green turns off
